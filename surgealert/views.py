@@ -29,7 +29,7 @@ def index(request):
 
 	for i in cities:
 		payload = cities[cities.index(i)]
-		headers = {'Authorization':'Token ENTERYOURUBERTOKENHERE'}
+		headers = {'Authorization':'Token ZzTuXujgb8xTD64LILYh0sxA3uDmsw_6xKtaok9w'}
 		r = requests.get('https://api.uber.com/v1/estimates/price', params = payload, headers=headers)
 		data = json.loads(r.text)
 		info = info + (names[cities.index(i)]) + '    '
