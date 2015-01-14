@@ -6,11 +6,11 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-	metrowest = {'start_latitude':'34.019454','start_longitude':'-118.491191','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	NewtonBC = {'start_latitude':'33.881728','start_longitude':'-118.404121','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	Cambridge = {'start_latitude':'34.085036','start_longitude':'-118.359318','end_latitude':'42.353743','end_longitude':'--71.066451'}
-	financial = {'start_latitude':'34.069112','start_longitude':'-118.281384','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	Southie = {'start_latitude':'34.057166','start_longitude':'-118.323956','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	metrowest = {'start_latitude':'42.295168','start_longitude':'--71.213802','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	NewtonBC = {'start_latitude':'42.33272','start_longitude':'-71.150208','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	Cambridge = {'start_latitude':'42.377003','start_longitude':'-71.116660','end_latitude':'42.353743','end_longitude':'--71.066451'}
+	financial = {'start_latitude':'42.356807','start_longitude':'-71.055064','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	Southie = {'start_latitude':'42.335659','start_longitude':'-71.035452','end_latitude':'42.353743','end_longitude':'-71.066451'}
 	
 	cities = []
 	cities.append(metrowest)
