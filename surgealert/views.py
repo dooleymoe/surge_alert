@@ -6,26 +6,21 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-	santamonica = {'start_latitude':'34.019454','start_longitude':'-118.491191','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	manhattanbeach = {'start_latitude':'33.881728','start_longitude':'-118.404121','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	westhollywood = {'start_latitude':'34.085036','start_longitude':'-118.359318','end_latitude':'42.353743','end_longitude':'--71.066451'}
-	koreatown = {'start_latitude':'34.069112','start_longitude':'-118.281384','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	midwilshire = {'start_latitude':'34.057166','start_longitude':'-118.323956','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	downtown = {'start_latitude':'34.042943','start_longitude':'-118.260098','end_latitude':'42.353743','end_longitude':'-71.066451'}
-	glendale = {'start_latitude':'34.137907','start_longitude':'-118.250141','end_latitude':'342.353743','end_longitude':'-71.066451'}
-	northhollywood = {'start_latitude':'34.161161','start_longitude':'-118.358803','end_latitude':'42.353743','end_longitude':'-71.066451'}
-
+	metrowest = {'start_latitude':'34.019454','start_longitude':'-118.491191','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	NewtonBC = {'start_latitude':'33.881728','start_longitude':'-118.404121','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	Cambridge = {'start_latitude':'34.085036','start_longitude':'-118.359318','end_latitude':'42.353743','end_longitude':'--71.066451'}
+	financial = {'start_latitude':'34.069112','start_longitude':'-118.281384','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	Southie = {'start_latitude':'34.057166','start_longitude':'-118.323956','end_latitude':'42.353743','end_longitude':'-71.066451'}
+	
 	cities = []
-	cities.append(santamonica)
-	cities.append(manhattanbeach)
-	cities.append(westhollywood)
-	cities.append(koreatown)
-	cities.append(midwilshire)
-	cities.append(downtown)
-	cities.append(glendale)
-	cities.append(northhollywood)
+	cities.append(metrowest)
+	cities.append(NewtonBC)
+	cities.append(Cambridge)
+	cities.append(financial)
+	cities.append(southie)
+)
 	info = ''
-	names = ["Santa Monica","Manhattan Beach","West Hollywood","Koreatown","Midwilshire","Downtown","Glendale","North Hollywood"]
+	names = ["Metrowest","NewtonBC","Cambridge","financial","southie"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
